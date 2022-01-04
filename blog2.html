@@ -1,0 +1,360 @@
+<html>
+<title> Jerome Dala's Blogs </title>
+<head>
+
+<style>
+body {
+	background-color:#eceff3;
+}
+
+/* NAVBAR */
+ul {
+font-family:'Poppins', sans-serif; 
+  font-size:16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: right;
+  padding-right: 22em;
+  overflow: hidden;
+}
+
+li a:hover {
+  background-color: #525557;
+  color: white;
+}
+
+li a {
+	display: block;
+	color: black;
+	padding-left: 20em;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.active {
+	background-color: #5f3915;
+	padding-left: 4em;
+	padding-right: 4em;
+	color: white;
+}
+
+/* LOGO */
+#top-logo {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* FOOTER */
+#footer {
+	background-color: #1b2938;
+}
+#up {
+	width:15px; 
+	height:15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+	img {
+	width:15px; 
+	height:15px;
+}
+#footer-logo:hover {
+	background-color:#d1dae9;
+}
+
+a {
+	text-decoration:none;
+}
+#last {
+	font-family: 'Poppins'; 
+	font-size:16px;
+	color: white;
+}
+
+/* SLIDESHOW */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* NEXT & PREVIOUS BUTTONS */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* POSITION THE "NEXT BUTTON" TO THE RIGHT */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* ON HOVER, ADD A BLACK BACKGROUND COLOR WITH A LITTLE BIT SEE-THROUGH */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* CAPTION TEXT */
+.text {
+  font-family:'Poppins', sans-serif; 
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* FADING ANIMATION */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* ON SMALLER SCREENS, DECREASE TEXT SIZE */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* BLOG */
+article {
+text-align: center;
+font-family:'Poppins', sans-serif;
+font-size: 18px;
+}
+
+/* BUTTON FOR NEXT ARTICLE */
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #152438;
+}
+.button1:hover {
+  background-color: #a8b7ca;
+  color: white;
+}
+
+.button {
+  margin: 0;
+  position: absolute;
+  top: 172%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #white;
+  border: 2px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family:'Poppins', sans-serif;
+font-size: 16px;
+}
+
+/* PAGE TRANSITION */
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #eceff3;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #0a1533;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+</style>
+<body>
+<!-- PAGE TRANSITION -->
+<div class="loader_bg">
+    <div class="loader"> </div>
+</div>
+
+<!-- FONTS USED -->
+<link href="https://fonts.googleapis.com/css?family=Poppins|Liu+Jian+Mao+Cao|Old+Standard+TT&display=swap" rel="stylesheet"> 
+
+
+<!-- ICON IN TITLE PAGE -->
+<link rel="shortcut icon" type="image/x-icon" href="mountain.ico"/>
+
+<!-- LOGO -->
+<img id="top-logo" src="jerome-logo.png">
+
+<!-- NAVBAR -->
+<nav>
+​<ul>
+  <li><a href="about.html">About Me</a></li>
+	 <li><a href="homepage.html">Home</a></li>
+    </div>
+  </li>
+</ul>
+</nav>
+
+<!-- SLIDESHOW -->
+<br> <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="6.png" style="width:600px;height:400px;margin-left:auto;margin-right:auto;">
+  <div class="text">My Friends from Taguig</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="7.png" style="width:600px;height:400px;margin-left:auto;margin-right:auto;">
+  <div class="text">My Friends from Taguig</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- BLOG -->
+<article> 
+<h2> My Friends </h2>
+I met these people way back in 2018 and I am thankful for that. <br>
+We helped each other grow and be a better person. <br> They give advice when we are in trouble or in need and <br> that is something that I am proud of. They are the definition of the word <br>'friends' and I love them so much.
+ </article>
+<br>
+<br>
+<div class="container">
+  <div class="center">
+   <a href="blog1.html"> <button class="button button1"> My Vacation Article</button> </a>
+  </div>
+</div>
+<br> <br> <br> <br>
+
+<!-- SCRIPT FOR SLIDESHOW -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+<center>
+<br>
+<a href="#top-logo"> <img id="up" img src="up-arrow.png"> </a>
+<a id="contact">
+<p id="last"> <br> Join Me On &nbsp
+<a href="https://www.facebook.com/angelo.dala.7"> <img id="footer-logo" src="facebook.png"> </a> &nbsp &nbsp
+<a href="https://www.instagram.com/dl.gelo"> <img id="footer-logo" src="instagram.png"> </a> &nbsp &nbsp
+<a href="mailto:jasdala19@gmail.com"> <img id="footer-logo" src="email.png"> </a> 
+</a> <br> <br>
+© Jerome Angelo S. Dala <br>
+All Rights Reserved 2022</p>
+</div>
+
+<!-- SCRIPT FOR PAGE ANIMATION -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+</body>
+</html>
